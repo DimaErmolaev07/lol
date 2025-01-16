@@ -16503,7 +16503,7 @@ Xn(qs, "locale"), Xn(qs, "supported", ["en", "fr", "it", "de", "es", "es-XL", "p
 const Za = class Za {
     static get serverUrl() {
         const e = this.getQueryParam("server") ?? this.getQueryParam("s");
-        return !e || e === "live" ? "ecast.jackboxgames.com" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
+        return !e || e === "live" ? "https://ecast.jack.qkol.eu" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
     }
     static isDevelopment() {
         return window.location.hostname === "dev.jackbox.tv" || window.location.hostname === "localhost"
